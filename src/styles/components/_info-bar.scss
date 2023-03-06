@@ -1,0 +1,40 @@
+.info-bar {
+  padding: 16px 24px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    &__item {
+      font-size: 14px;
+      color: black;
+      list-style-type: none;
+
+      strong {
+        font-size: 18px;
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+
+    &__list {
+      display: block;
+
+      &__item {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__list {
+      gap: 16px;
+    }
+  }
+}
