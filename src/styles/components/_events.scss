@@ -1,0 +1,41 @@
+.event {
+  background-image: linear-gradient(#1b6ca7, #442bdb);
+  padding: 80px 0;
+
+  .container {
+    display: flex;
+  }
+
+  &__img {
+    max-width: 360px;
+  }
+
+  &__detail {
+    margin-right: 40px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__desc {
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__detail {
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+  }
+}
