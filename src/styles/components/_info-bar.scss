@@ -1,6 +1,8 @@
+@use '../var';
+
 .info-bar {
   padding: 16px 24px;
-  background-color: white;
+  background-color: var.$text-color;
   display: flex;
   justify-content: space-between;
 
@@ -10,7 +12,7 @@
 
     &__item {
       font-size: 14px;
-      color: black;
+      color: var.$text-secundary-color;
       list-style-type: none;
 
       strong {
